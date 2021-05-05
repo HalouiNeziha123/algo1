@@ -1,0 +1,27 @@
+Algorithm WordCount
+VAR 
+ c : char;
+ words, vowels:integer = 0;
+ length:integer = 1;
+BEGIN
+  While c <> "." do
+  Read (c);
+  length:= length +1;
+    if (c === " ") 
+      words := words +1; 
+    else 
+       if (c === " A " OR c === " a " OR c === " E " OR c === " e "OR c === " I " OR c === " i " OR c === " O "OR c === " o " OR c === " U " OR c === " u ") then vowels:= vowels +1
+       end_if
+   end_if
+END_While
+Write ("length is: ", length, "words number is: ",  words + 1, "vowels number is: ", vowels);
+END
+
+
+#S="sentence"
+#vowels=['a', 'e','i','o','u' ]
+num_vowels= 0
+for i in S:
+if i in vowels:
+num_vowels= num_vowels+1
+write(num_vowels)
